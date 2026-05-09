@@ -72,11 +72,11 @@ $$h_{t+1} = f(h_t, x_t), \quad \hat{y}_{t+1} = g(h_{t+1})$$
 
 LFM2's state-space architecture naturally captures this temporal evolution with constant memory and linear-time processing — architecturally ideal for sequential recommendation.
 
-## 🏥 Merck Commercial Analytics Connection
+## 🏥 Enterprise Pharma Application
 
 This repo directly maps to my **HCP targeting and salesforce optimization** work:
 
-| RecSys Concept | Merck Application |
+| RecSys Concept | Pharma Application |
 |---|---|
 | User (persona) | Healthcare Professional (HCP) |
 | Item | Promotional channel (email, rep visit, webinar, sample) |
@@ -86,7 +86,7 @@ This repo directly maps to my **HCP targeting and salesforce optimization** work
 | Budget constraint | Promotional budget limit per brand |
 | Business metric | Incremental prescriptions / ROI per HCP |
 
-**Key insight from Merck:** Segmentation drives targeting. I cluster HCPs by specialty, prescribing volume, promotional response, and digital engagement — then allocate resources to maximize ROI under constraints. This repo formalizes that process.
+**Key insight from enterprise experience:** Segmentation drives targeting. I cluster HCPs by specialty, prescribing volume, promotional response, and digital engagement — then allocate resources to maximize ROI under constraints. This repo formalizes that process.
 
 ## 🚀 Quickstart
 
@@ -154,23 +154,6 @@ synth-persona-hcp-targeting/
 | **Targeting NDCG@5** | Leave-one-out evaluation | ≥ 0.12 |
 | **EIV improvement** | vs. random targeting baseline | ≥ 25% lift |
 | **Fairness** | Demographic parity across specialties | Ratio > 0.8 |
-
-## 🎤 Interview Talking Points
-
-- **Privacy:** "Real HCP data is HIPAA-adjacent. Synthetic personas preserve statistical structure without exposing individuals. I validate with Chi-square and KS tests."
-- **Business impact:** "At Merck, targeting optimization improved promotional response rates by 15%. This repo formalizes and scales that process."
-- **Why LFM2.5?** "Sequential recommendation needs constant-memory, linear-time processing. LFM's state-space architecture is architecturally ideal — better than transformer-based recommenders for long HCP histories."
-
-## 📋 Resume Bullet
-
-> "Built synthetic HCP persona generation system with knowledge-graph-grounded attributes, producing 5K+ diverse personas validated via Chi-square testing (p > 0.05) for targeting simulation with 25% EIV improvement over random baseline."
-
-## 🔗 Liquid AI Connection
-
-- **Data Research:** Synthetic data generation with quality validation
-- **RecSys:** Sequential recommendation for personalization
-- **Enterprise:** Privacy-preserving, on-device targeting for pharma customers
-- **LEAP:** Deployable targeting agent for edge inference
 
 ## License
 
