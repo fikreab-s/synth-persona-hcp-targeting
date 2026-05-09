@@ -1,6 +1,9 @@
-# 🎯 Synthetic HCP Persona Generation & Targeting
+# Synthetic HCP Persona Generation
 
-> Knowledge-graph-driven synthetic Healthcare Provider (HCP) persona generation with privacy-preserving targeting optimization, powered by fine-tuned LFM2.5-1.2B.
+> Generating realistic synthetic healthcare professional (HCP) personas for model training and targeting scenario simulation — without exposing real patient or provider data.
+>
+> **Context:** In pharma commercial analytics, real HCP data is tightly restricted. This pipeline generates privacy-compliant synthetic personas that preserve statistical properties of real targeting datasets, enabling model development without regulatory risk.
+
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
