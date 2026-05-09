@@ -158,3 +158,11 @@ synth-persona-hcp-targeting/
 ## License
 
 MIT
+
+## 📸 Visual Tour
+
+![comparison](viz/comparison.png)
+
+![training](viz/training.gif)
+
+---
