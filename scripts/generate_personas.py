@@ -150,7 +150,7 @@ def generate_persona(persona_id: int) -> HCPPersona:
     # Formulary access (brand availability)
     brands = ["Cardivex", "Immunolex", "OncoPrime", "NeuraStar",
               "RespiClear", "DermaShield", "VaxGuard", "EndoBalance"]
-    formulary = {b: random.random() > 0.3 for b in brands}
+    formulary = {b: bool(random.random() > 0.3) for b in brands}
     
     # Annual Rx volume
     annual_rx = int(patients * 52 * np.random.uniform(0.3, 0.7))
@@ -164,7 +164,7 @@ def generate_persona(persona_id: int) -> HCPPersona:
         n_touches = np.random.poisson(lam=1.5)
         for _ in range(n_touches):
             ch = sample_from_distribution(channel_preferences)
-            responded = random.random() < promo_sensitivity
+            responded = bool(random.random() < promo_sensitivity)
             history.append({
                 "month": month,
                 "channel": ch,
